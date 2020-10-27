@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="assets/img/images/logoGameTeam.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- cdn bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- lien feuille de styles -->
+  <link rel="stylesheet" href="assets/styles/template.css">
+  <link rel="stylesheet" href="assets/styles/contact.css">
+  <title> WFG | Contact</title>
+</head>
+
+<body>
+
+
+  <!-- Le header -->
+  <header class="container-fluid">
+    <div class="row mx-0 px-0 justify-content-around">
+      <nav class="menu d-flex justify-content-around col-12 align-items-center px-0">
+        <img src="assets/img/icons/bars-solid.svg" class="logo-burger" alt="menu déroulant mobile">
+        <a href="index.html" id="logo-number-1"><img src="assets/img/images/logoGameTeam.svg" class="logo-wfg n1" alt="lien retour accueil"></a>
+        <div class="slogan-name d-flex flex-column text-center">
+          <span class="name-group"><span class="span1">W</span>EB <span class="span2">F</span>ORCE <span
+              class="span3">G</span>AME</span>
+          <span class="slogan-menu">Que la force du jeu soit avec toi!</span>
+        </div>
+        <a href="index.html"><img src="assets/img/images/logoGameTeam.svg" class="logo-wfg" alt="lien retour accueil"></a>
+        <div class="navbar-desktop">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Jeux
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="nav-link" href="classiques.html">Classiques</a>
+                <a class="nav-link" href="decouvertes.html">Découvertes</a>
+                <a class="nav-link" href="nomadisme.html">Nomades</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="actualites.html" tabindex="-1" aria-disabled="true">Actualités</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="boutiques.html">Boutiques</a>
+            </li>
+            <li class="nav-item active-page">
+              <a class="nav-link no-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+
+
+      <div class="menu-mobile-links d-flex flex-wrap text-center justify-content-around">
+        <a class="col-sm-8" href="classiques.html">Jeux classiques
+          <img src="assets/img/images/reste.svg" alt="lien jeux classiques">
+        </a>
+        <a class="col-sm-8" href="decouvertes.html">Découvertes
+          <img src="assets/img/images/new.svg" alt="lien jeux découvertes">
+        </a>
+        <a class="col-sm-8" href="nomadisme.html">Nomadisme
+          <img src="assets/img/images/nomade.svg" alt="lien jeux nomades">
+        </a>
+        <a class="col-sm-8" href="actualites.html">Actualités
+          <img src="assets/img/images/actu.svg" alt="lien actualité">
+        </a>
+        <a class="col-sm-8" href="boutiques.html">Boutiques
+          <img src="assets/img/images/localisation.svg" alt="lien où acheter un jeu">
+        </a>
+        <a class="col-sm-8 no-link" href="contact.html">Contact
+          <img src="assets/img/images/contactLogo.svg" alt="lien nous contacter">
+        </a>
+      </div>
+
+  </header>
+
+  <!-- Fin du header -->
+
+  <!-- Début du main -->
+
+
+  <main class="container-fluid">
+    <!-- LE FIL D'ARIANE -->
+    <section class="breadcrumb-section" aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html"><img class="home" src="assets/img/icons/home.svg"
+              alt="retour à la page d'accueil"></a></li>
+        <li class="breadcrumb-item active" aria-current="page">Contact</li>
+      </ol>
+    </section>
+
+
+    <h1>CONTACT</h1>
+    <article>
+    <form method="post" id="formulaire" class="form-contact" name="form-contact">
+      <div class="identification row">
+        <div class="col-12 col-md-6 px-md-3">
+          <input type="text" id="nom" placeholder="Nom / Prénom" name="nom">
+        </div>
+        <div class="col-12 col-md-6 px-md-3">
+          <input type="email" id="email" placeholder="email@mail.com" name="email">
+        </div>
+        <div class="col-12 px-md-3">
+          <textarea id="textarea" name="votreMessage" placeholder="Message"></textarea>
+        </div>
+        <div class="col-12 px-md-3">
+          <label for="rgpd"><input type="checkbox" id="rgpd" name="rgpd" value="1">
+            En cochant, vous reconnaissez avoir lu le Réglement Général de la Protection des Données  : <a class="btnRgpdOpen" href="#">le RGPD</a></label>
+        </div>
+      </div>
+
+      <button type="submit" id="submit">Envoyer</button>
+    </form>
+  </article>
+  </main>
+  <!-- Fin du main -->
+
+
+
+   <!-- Le footer -->
+   <footer class="container-fluid">
+    <div class="row">
+      <div class="col-lg-4 col-sm-12 d-flex flex-column text-center">
+        <h3>Informations Légales</h3>
+        <a href="cgu.pdf" target="_blank">CGU</a>
+        <a href="mentions-legales.html">Mentions Légales</a>
+      </div>
+      <div class="col-lg-4 col-sm-12 d-flex flex-column text-center">
+        <h3>Données personnelles</h3>
+        <a href="politique-de-confidentialité.pdf" target="_blank">Politique de confidentialité</a>
+        <a href="politique-cookies.pdf" target="_blank">Politique cookies</a>
+
+      </div>
+      <div class="col-lg-4 d-flex col-sm-12 flex-column text-center">
+        <div class="contact-footer d-flex justify-content-center">
+          <h3>Contactez-nous : </h3>
+          <a href="contact.html" id="contact-link-page">
+            <img src="assets/img/images/email.svg" alt="lien nous contacter">
+          </a>
+        </div>
+        <div class="reseaux">
+          <a href="https://twitter.com/Webforcegame1" target="_blank"><img src="assets/img/images/twitter.svg"
+              alt="lien vers twitter" /></a>
+          <a href="https://www.facebook.com/pg/Web-Force-Game-109467214060615/about/?ref=page_internal"
+            target="_blank"><img src="assets/img/images/facebook.svg" alt="lien vers facebook" /></a>
+          <a href="https://www.instagram.com/gameforceweb/" target="_blank"><img src="assets/img/images/insta.svg "
+              alt="lien vers instagram" /></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <span class="col-lg-12 text-center">© Web Force Game</span>
+    </div>
+  </footer>
+  <!-- Fin du footer -->
+
+
+  <div id="popup">
+    <div class="popupClose"><a href="#" id="btnClose"> X fermer X</a></div>
+       <h6 class="titre-popup">Réglement Générale de la Proctection des Données</h6>
+     <p>Les informations recueillies sur ce formulaire  ne sont pas enregistrées. Les informations ont pour finalités l'envoi de mail. La base légale du traitement est l'envoi de mail.
+       Les données collectées ne seront communiquées à aucun tiers.
+       Les données ne seront pas conservées. Vous pouvez accéder aux données vous concernant, les rectifier, demander leur effacement ou exercer votre droit à la limitation du traitement de vos données. (en fonction de la base légale du traitement, mentionner également : Vous pouvez retirer à tout moment votre consentement au traitement de vos données ; Vous pouvez également vous opposer au traitement de vos données ; Vous pouvez également exercer votre droit à la portabilité de vos données)
+       Consultez le site cnil.fr pour plus d’informations sur vos droits.
+       Pour exercer ces droits ou pour toute question sur le traitement de vos données dans ce dispositif, vous pouvez contacter (le cas échéant, Mme Untel chargée de l’exercice de ces droits) : [webforcegame@game.com, postale, coordonnées téléphoniques, etc.] 
+       Si vous estimez, après nous avoir contactés, que vos droits « Informatique et Libertés » ne sont pas respectés, vous
+       pouvez adresser une réclamation à<a target="_blank" href="https://www.cnil.fr/"> la CNIL</a>.</p> 
+   </div>
+
+
+
+  <!-- ICI LES SCRIPTS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <script src="assets/js/jquery.validate.min.js"></script>
+  <script src="assets/js/script.js"></script>
+
+  <!-- FIN DES SCRIPTS -->
+
+</body>
+
+
+
+</html>

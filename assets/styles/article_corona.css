@@ -1,0 +1,104 @@
+.container{
+    background-color: #F0FAFB;
+    padding-bottom: 2rem;
+}
+.card-body{
+    text-align: center;
+}
+.image img{
+    width: 50px;
+    height: 50px;
+}
+.image{
+    justify-content: center;
+    display: flex;
+}
+
+main h1{
+    text-align: center;
+    padding: 1.8rem;
+    font-size: 2.5rem;
+}
+main .gameCard h2, main .gameCard2 h2{
+    font-family: "VictorMono";
+    text-align: center;
+    padding: 1.8rem;
+    font-size: 2.3rem;
+    margin-bottom: 2rem;
+}
+.gameCard, .gameCard2{
+    width: 80%;
+    display: block;
+    margin: 2rem auto;
+    background-color: white;
+    margin-bottom: 4rem;
+    padding: 1rem;
+}
+.card-img{
+    width: 250px;
+    height: 250px;
+    display: block;
+    margin: 1rem auto;
+    box-shadow: 3px 3px 8px darkcyan;
+}
+.card-body a{
+    color: white;
+}
+.card-text{
+    font-size: 1.5rem;
+    text-align: start;
+    margin-bottom: 2rem;
+    justify-content: center;
+    display: flex;
+}
+.btn{
+    background-color:  #1994AD;
+    border-radius: 36%;
+    box-shadow: 3px 3px 8px darkcyan;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.carousel-indicators{
+    bottom: -20px;
+}
+.carousel-indicators li{
+    background-color:#1994AD;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+}
+.ancre{
+    text-align: right;
+    padding-right: 1.5rem;
+}
+
+.ancre img{
+    width: 50px;
+}
+
+/* MEDIA QUERIE */
+
+/* ----------  Desktop ------- */
+@media screen and (min-width: 720px){
+    main h1{
+        font-size: 4.5rem;
+    }
+    .confinement{
+        margin-bottom: 5rem;
+    }
+    .gameCard{
+        display: flex;
+    }
+    .card-text{
+        margin: 2rem;
+        padding: 1rem;
+    }
+    .gameCard h2{
+        text-align: start!important;
+        font-size: 4rem;
+    }
+    .gameCard, .gameCard2{
+        padding: 2rem;
+    }
+    
+}    

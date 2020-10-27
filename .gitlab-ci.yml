@@ -1,0 +1,22 @@
+image: ubuntu
+
+stages:
+  - test
+  - deploy
+  
+before_script:
+  - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client git -y )'
+  - eval $(ssh-agent -s)
+  - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add -
+  - mkdir -p ~/.ssh
+  - chmod 700 ~/.ssh
+  - echo "$SSH_KNOWN_HOSTS" > ~/.ssh/known_hosts
+  - chmod 644 ~/.ssh/known_hosts
+
+deploy-to-prod:
+  script:
+    - ssh magalie@$SSH_HOST "rm -Rf ~/magalie.famille-bourguignon.com/gameteam/ci/$CI_BUILD_REF_NAME ||:"
+    - ssh magalie@$SSH_HOST "mkdir -p ~/magalie.famille-bourguignon.com/gameteam/ci/$CI_BUILD_REF_NAME"
+    - ssh magalie@$SSH_HOST "ls ~/magalie.famille-bourguignon.com/gameteam/ci/"
+    - scp -r * magalie@$SSH_HOST:magalie.famille-bourguignon.com/gameteam/ci/$CI_BUILD_REF_NAME/
+    - ssh magalie@$SSH_HOST "ls ~/magalie.famille-bourguignon.com/gameteam/ci/$CI_BUILD_REF_NAME/"

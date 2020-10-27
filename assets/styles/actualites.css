@@ -1,0 +1,101 @@
+/* LE MAIN */
+main h1{
+    text-align: center;
+    padding-top: 1rem;
+    font-size: 2.8rem;
+}
+
+main .gameCard h2{
+    font-size: 2.2rem;
+    font-weight: bold;
+    font-family: "VictorMono";
+}
+
+.card-title{
+    padding: 2px;
+    padding-left: 20px;
+    }
+
+main .card-text{
+    font-size: 1.2rem;
+    padding-left: 20px;
+}
+
+.gameCard{
+    width: 70%;
+    display: flex;
+    margin: 2rem auto;
+    background-color: #F0FAFB;
+    border-radius: 10px;
+    box-shadow: 8px 8px 12px #aaa;
+    
+}
+
+.gameCard:hover img{
+    transform: rotate(-10deg);
+}
+
+.card-img{
+    width: 250px;
+    height: 250px;
+    display: block;
+    margin: 1rem auto;
+    box-shadow: 8px 8px 12px #aaa;
+    transform: rotate(10deg);
+    transition: all 300ms;
+    border-radius: 10px;
+}
+
+/* ----------  MOBILE ------- */
+@media screen and (max-width: 720px){
+    .gameCard{
+        flex-direction: column;
+    }
+   
+}
+
+/* ----------  Desktop ------- */
+@media screen and (min-width: 720px){
+main{
+        margin: 0 auto;
+        font-weight: 1.7em;
+    }
+
+main h1{
+        margin-bottom: 60px;
+        font-size: 4.5rem;
+    }
+
+.gameCard{
+        flex-direction: row;
+        margin-bottom: 60px;
+     
+    }
+
+.gameCard:nth-child(even) {
+     flex-direction: row-reverse;
+ }
+
+ .card-img{
+     width: 250px;
+     height: 250px;
+     margin: -15px;
+ }
+
+ .card-text{
+     padding: 10px;
+     padding-top: 20px; 
+     }
+
+ }
+ 
+
+
+ 
+
+
+
+
+
+
+ 

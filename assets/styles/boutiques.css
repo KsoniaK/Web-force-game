@@ -1,0 +1,49 @@
+/* La partie main des boutiques */
+
+main{
+    padding-top: 150px;
+}
+
+main h2{
+    text-align: center;
+    padding-top: 1rem;
+    font-size: 3rem;
+    color: black;
+}
+
+.btn-group{
+    display: flex;
+    justify-content: center;
+    width: 20%;
+    margin: 3rem auto;  
+}
+
+
+main .btn{
+    background-color:#1994AD;
+}
+
+.listeDepartement{
+    display: none;
+    text-align: center;
+    list-style: none;
+    padding-left: 0 ;
+}
+
+.listeDepartement li div{
+    box-shadow: 0 3px 6px #aaa;
+ width: 70%;
+ margin: 12px auto ;
+ border-radius: 10px;
+}
+
+.listeDepartement img{
+    width: 50px;
+    padding-bottom: 30px;
+    transition: all 200ms; 
+}
+
+.listeDepartement img:hover{
+    width: 70px;
+    padding-bottom: 10px;
+}

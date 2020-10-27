@@ -1,0 +1,134 @@
+main h1{
+    text-align: center;
+    padding-top: 1rem;
+    font-size: 4.5rem;
+}
+
+.form-contact{
+    font-size: 1.8rem;
+    padding: 10px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 3px;
+    width: 90%;
+}
+
+.form-contact input:not([type="checkbox"]),
+.form-contact textarea{
+    padding-left: 10px;
+    height:35px;
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid #9AD9E2;
+    background-color: rgba(154,217,226,0.1);
+    margin: 15px 0;
+    color: #9AD9E2;
+}
+.form-contact textarea{
+    max-height: 120px;
+    min-height: 120px;
+}
+.form-contact input:focus,
+.form-contact textarea:focus{
+    border: 1px solid #7bbfc9 !important;
+}
+.form-contact input[type="checkbox"]{
+    width: 20px;
+    border: 1px solid #9AD9E2;
+}
+.form-contact label{
+    text-align: left;
+    font-size: 1.3rem;
+    font-style: italic;
+    color: #70a1a8;
+}
+
+#submit {
+    color: #fff;
+    background-color:#1994AD;
+    border-radius: 20px 38px 40px 50px;
+    padding: 10px 15px;
+    border: 1px solid #1994AD;
+    cursor: pointer;
+    box-shadow:0 0 7px 0 rgba(25,148,173,0.7);
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -ms-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+#submit:hover{
+    color: #000;
+    background-color:#fff;
+}
+#submit:active{
+    box-shadow:0 0 3px 0 rgba(0,0,0,1);
+}
+
+#submit:focus{
+    outline: none;
+}
+form .error{
+    color: orangered;
+    text-shadow: yellow;
+    font-size: 1.6rem;
+    
+}
+
+#popup{
+	width: 90%;
+	max-height: 80%;
+	overflow-y:auto; 
+	padding: 2rem;
+    background: #F0FAFB;
+    color: 5941A9;
+    border-radius: 10px;
+    box-shadow: 3px 2px darkcyan;
+	position: fixed;
+	z-index: 100;
+	top: 50%;
+	left: 50%;
+	-moz-transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	color: #fff;
+	display: none;
+}
+div .popupClose{
+   text-align: right;
+    padding: 1.5px;
+    padding-bottom:10px;
+}
+.titre-popup{
+    font-weight: bold;
+    font-size: 1.7rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    text-align: center;
+    padding: 5px;
+}
+
+#popup p, #popup h6{
+    color: #000;
+}
+
+@media screen and (min-width: 992px){
+    #submit{
+        padding: 15px 20px;
+    }
+
+    .form-contact{
+        width: 60%;
+    }  
+
+
+
+}
+
+
+
+
+
+
+
